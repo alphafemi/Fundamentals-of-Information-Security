@@ -1,0 +1,36 @@
+SFTP (SSH File Transfer Protocol) Documentation
+SFTP, or SSH File Transfer Protocol, is a secure method for transferring files between systems. This guide explains SFTP, its differences from FTP, how it works, benefits, and real-world applications. SFTP is widely used for secure data transfers in business environments.
+
+What is FTP?
+FTP (File Transfer Protocol) is a standard protocol for transferring data between a computer and a remote server over the internet.
+Function: Facilitates file management and transfer through a client-server relationship.
+Usage: Allows uploading, downloading, and organizing files across systems.
+Limitations: Lacks built-in security, making it vulnerable to interception.
+
+What is SFTP?
+SFTP is a secure extension of FTP that uses SSH (Secure Shell) for encrypted file transfers.
+Full Name: SSH File Transfer Protocol (the "S" stands for SSH or Secure Shell).
+Purpose: Provides a secure way to transfer files, ensuring confidentiality and integrity.
+Key Difference: Unlike FTP, SFTP encrypts both commands and data, protecting against eavesdropping.
+
+How SFTP Works
+SFTP operates over a secure SSH connection, eliminating vulnerabilities in traditional FTP.
+Connection Type: Uses a client-server model, but all transfers occur over a single control channel (no separate data channel needed).
+Authentication: Requires server authentication; runs over an SSH session on TCP port 22.
+Security Layer: SSH establishes a secure channel between local and remote systems.
+Encryption: Protects usernames, passwords, and data from being "sniffed" or viewed in plain text.
+Process: Commands and data are encrypted, ensuring safe transmission over the internet.
+
+Benefits of SFTP
+SFTP is the industry standard for secure file transfers, offering reliability without compromising security.
+Security: Encrypts all traffic, ideal for sensitive information like customer data, financial records, or internal operations.
+Versatility: Works for any industry or file type, similar to FTP but with added protection.
+Compliance: Helps meet regulatory requirements for data protection (e.g., HIPAA, GDPR).
+Efficiency: No need for multiple channels; integrates seamlessly with SSH for secure access.
+
+Real-World Applications
+SFTP is used across various sectors for secure, compliant file handling.
+Legal Firms: Maintains tight control over records for courts, governments, and agencies like the IRS, ensuring restricted access.
+IT Professionals: Provides secure access to systems, reducing overall risk and protecting infrastructure.
+Movie Production Companies: Distributes digital movies to theaters securely, enabling safe release of blockbusters.
+Business Examples: Companies like ADP use SFTP for payroll submissions; any organization handling sensitive data (e.g., agreements, financial info) benefits from its encryption and reliability.
