@@ -1,0 +1,59 @@
+Packet Sniffing Documentation
+Packet sniffing involves intercepting and analyzing data packets transmitted over a network. This guide explains what packet sniffing is, its legitimate and malicious uses, how tools work, protection methods, and who employs it. While useful for network diagnostics, it poses significant security risks if misused.
+
+What is Packet Sniffing?
+Packet sniffing is the process of capturing and examining data packets as they travel across a network.
+Process: Data is broken into packets for transmission; packets may be intercepted by a third party, similar to eavesdropping.
+Risk: Compromises sensitive information like emails, passwords, or financial data if not secured.
+
+Uses of Packet Sniffing
+Packet sniffing has both beneficial and harmful applications.
+Legitimate Uses:
+Network engineers diagnose issues, troubleshoot problems, and gather performance statistics.
+Provides detailed views of device communications for setting up security and encryption in corporate environments.
+Malicious Uses:
+Hackers access network traffic, including confidential data, using it as a standard tool in their toolkit.
+Often combined with other attacks, like man-in-the-middle, to gain privileges.
+
+Packet Sniffers
+Packet sniffers, also called packet analyzers, are tools for performing sniffing.
+Types:
+Filtered: Collects only specific data packets, excluding some information.
+Unfiltered: Captures all data packets for comprehensive analysis.
+Capabilities: Attackers can read emails, passwords, and financial info if they have sufficient privileges (often obtained via other hacking methods).
+
+How Do Packet Sniffers Work?
+Packet sniffers operate in hardware or software forms to capture network traffic.
+Hardware Packet Sniffers:
+Plugged directly into a network segment for analysis.
+Ensures no packet loss from filtering or routing.
+Stores or forwards packets to a collector for logging and examination.
+Software Packet Sniffers:
+More common; often open-source.
+Configures network interfaces to receive all traffic (promiscuous mode).
+Separates, reassembles, and logs packets for analysis.
+Intercepted Traffic Examples:
+Ports used by users.
+Web traffic (HTTP, HTTPS).
+Mail traffic (IMAP, POP3, SMTP).
+File transfers (FTP, P2P).
+Infrastructure (DHCP, DNS, ICMP, SNMP).
+Remote control (RDP, SSH, VNC).
+Other UDP/TCP traffic.
+
+Network Considerations:
+Wired Networks: Depends on structure; may require multiple sniffers; traffic beyond routers isn't visible.
+Wireless Networks: Limited to one channel; needs sniffers per segment or channel for full coverage.
+
+How to Protect Yourself against Packet Sniffing
+Implement detection and prevention measures to secure networks.
+Detection: Use tools like Antisniff to identify active sniffers on the network.
+Encryption: Employ SSL (Secure Sockets Layer) or TLS (Transport Layer Security) to encrypt data, making it unreadable to sniffers (though source/destination may still be visible).
+VPNs: Create encrypted tunnels for traffic; military-grade encryption prevents interception by anyone, including governments.
+Best Practices: Regularly monitor networks, use secure protocols, and limit access privileges.
+
+Who Can Use Packet Sniffers?
+Various entities use packet sniffers for monitoring, security, or analysis.
+Government Agencies: Ensure data security, track organizations, or monitor internet traffic.
+Businesses and Advertising Agencies: Analyze user behavior to target ads, influence preferences, or expand reach.
+ISPs (Internet Service Providers): Track activity for malicious content detection or bandwidth usage enforcement.
