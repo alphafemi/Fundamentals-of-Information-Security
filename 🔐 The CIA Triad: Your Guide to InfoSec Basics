@@ -1,0 +1,48 @@
+CIA Triad in Information Security
+The CIA Triad (Confidentiality, Integrity, Availability) is a foundational model for guiding information security policies. It represents the three most crucial components of security, ensuring that data is protected, trustworthy, and accessible when needed. This guide breaks down each element, methods to achieve them, and challenges posed by modern technologies like Big Data and the Internet of Things (IoT).
+
+Overview of the CIA Triad
+Definition: An organizational model designed to guide policies for storing and protecting information.
+Importance: Considered the core pillars of security, applicable to organizations of all sizes.
+Relevance: Helps in designing systems that balance privacy, accuracy, and reliability.
+
+Confidentiality
+Limits access to information, ensuring only authorized individuals can view sensitive data.
+Comparable to Privacy: Protects against unauthorized disclosure.
+Key Methods:
+Data encryption to scramble information.
+Two-factor authentication for layered access.
+Biometric verification (e.g., fingerprints or facial recognition).
+Goal: Right people access data; wrong people are blocked.
+
+Integrity
+Ensures information is trustworthy, accurate, and consistent throughout its lifecycle.
+Focus: Maintains data consistency and prevents unauthorized changes.
+Key Measures:
+File permissions and user access controls to restrict modifications.
+Checksums to detect alterations.
+Backups to protect against non-human threats like electromagnetic pulses or server crashes.
+Goal: Data remains unaltered and reliable.
+
+Availability
+Guarantees reliable access to information when required.
+Best Practices:
+Rigorous hardware maintenance.
+Keeping systems up-to-date with upgrades.
+Providing sufficient bandwidth to avoid bottlenecks.
+Implementing fast disaster recovery plans.
+Goal: Information is accessible without unnecessary delays or outages.
+
+Challenges with Big Data and IoT
+Modern technologies introduce complexities that test the CIA Triad.
+Big Data Challenges: The volume, diverse sources, and variety of formats make it harder to maintain confidentiality, integrity, and availability.
+IoT Challenges: Internet-connected devices (e.g., smart bulbs) often have weak passwords and unpatched vulnerabilities, making them easy targets for exploitation.
+Example: A WiFi-enabled light bulb could be used as an attack vector by bad actors.
+Overall Impact: Increases risks of breaches, data corruption, and downtime.
+
+Embracing the CIA Triad in Your Organization
+To implement the CIA Triad effectively:
+Assess current policies and identify gaps in confidentiality, integrity, and availability.
+Use tools like encryption, access controls, and regular backups.
+For Big Data and IoT, prioritize strong passwords, timely patches, and network segmentation.
+Regularly audit and update security measures to address evolving threats.
