@@ -1,0 +1,45 @@
+DDoS Attack Basics Documentation
+This guide explains the fundamentals of Distributed Denial of Service (DDoS) attacks, based on insights from Ryan Sumner, Chief Network Architect at IBM Cloud. DDoS attacks overwhelm targets with traffic, disrupting normal operations. Understanding them helps in prevention and mitigation.
+
+What is a DDoS Attack?
+A DDoS attack is an attempt by an attacker to flood a target application or internet service with excessive traffic or congestion.
+Goal: Impede the flow of legitimate traffic from normal visitors.
+Impact: Makes the target inaccessible or slow for authorized users.
+
+What Can a DDoS Attack Do?
+DDoS attacks cause visible disruptions to users and owners.
+Symptoms for Visitors/Owners:
+Drastic reduction in speed.
+Complete outage.
+Unexplained consequences not seen in normal operations.
+Overall Effect: Interferes with day-to-day functionality, leading to frustration or business loss.
+
+Normal Traffic Flow
+Illustrates how traffic typically moves without interference.
+Process: Internet users send clean traffic through the connection to the target server.
+Characteristics: Flows smoothly with no slowdowns or constrictions.
+Visualization: Traffic traverses from users on the internet to the server via a clear path.
+
+How Does a DDoS Attack Happen?
+Attackers don't rely on personal resources; they use compromised networks.
+Attacker's Preparation: Research and gain access to a network of hacked or compromised computers (e.g., IoT devices, personal computers, servers).
+Not Manual: Attackers don't recruit friends or make calls; they control devices remotely.
+Traffic Generation: When ready, the attacker commands the network to flood the target with traffic, creating congestion in the connection pipe.
+
+Botnets
+The backbone of most DDoS attacks.
+Definition: A network of compromised computers under the attacker's control, acting like robots (hence "botnet").
+Control: Attacker remotely directs the botnet on actions, duration, and targets.
+Composition: Includes hacked devices across the internet, not limited to one type.
+
+Attack Execution
+Demonstrates how the botnet overwhelms the target.
+Process: Attacker activates the botnet to generate massive traffic from all compromised systems.
+Result: Congestion in the internet-to-server pipe prevents legitimate traffic from reaching the target.
+Duration: Continues as long as the botnet operates, blocking normal users indefinitely.
+Analogy: Like a roadway so jammed that no one can enter.
+Conclusion
+DDoS attacks disrupt services by overwhelming connections.
+
+Signs of Attack: Slow application performance, downtime, or unusual behavior.
+Advice: If experiencing these issues, suspect a DDoS and implement defenses like traffic filtering or DDoS mitigation services.
