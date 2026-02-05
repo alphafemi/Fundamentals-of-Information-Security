@@ -1,0 +1,60 @@
+AAA (Authentication, Authorization, Accounting) Model Documentation
+The AAA model, also known as I Triple A (Identification, Authentication, Authorization, Accounting/Auditing), is a cybersecurity framework for managing user access and tracking activities on networks. This guide explains its components, purpose, access control models, and implementation, helping to identify and retrace attacker steps. Presented by John Good, a technology professional and trainer.
+
+Purpose of I Triple A
+AAA is a core concept in cybersecurity for securing systems and networks.
+
+Definition: Stands for Identification, Authentication, Authorization, and Accounting (or Auditing).
+Function: Identifies users, verifies their identity, grants appropriate access, and logs all actions for accountability and incident response.
+Importance: Allows retracing user steps to reconstruct events, such as malware infections or unauthorized access.
+Distinction: Not related to the American Automobile Association; focuses on user management and auditing.
+
+          Identification
+The first step where a user claims a specific identity.
+Process: User provides an identity claim, such as a username or by swiping a smart card.
+System Role: Links all subsequent activity to that identity (e.g., username "JSmith" for John Smith).
+Purpose: Establishes who the user is for tracking and accountability.
+Authentication
+Verifies that the claimed identity is legitimate.
+Process: User provides proof, like a password or PIN, to confirm identity.
+System Check: Compares provided credentials against a stored database of known username-password combinations.
+Key Note: Usernames are public (e.g., first initial + last name), but passwords must remain confidential to prevent breaches.
+Outcome: Successful match allows progression to authorization.
+
+
+
+                Authorization
+Grants permissions based on verified identity.
+Process: Assigns abilities and privileges (e.g., read access to a file but not delete).
+Access Control Models:
+Discretionary Access Control (DAC): File/object owner assigns permissions to other users/subjects.
+Mandatory Access Control (MAC): Uses data labeling (e.g., clearance levels in military environments).
+Role-Based Access Control (RBAC): Permissions based on job role or department (e.g., sales access to sales data, HR to compensation info).
+Purpose: Ensures users only access what they need for their role.
+
+
+            Accounting/Auditing
+Records all user actions for review and incident reconstruction.
+Process: Logs every step or action taken by the user.
+Use Case: Retraces events, such as identifying how malware entered the system (e.g., via software installation).
+Benefit: Creates an audit trail to "put the story together" of what happened.
+Importance: Holds users accountable; prevents denials of actions. Weak processes allow users to claim innocence.
+Protection: Safeguard audit logs from tampering, as attackers may delete entries to hide activity, creating gaps in the story.
+
+      Implementation
+AAA is implemented using dedicated servers and protocols.
+Triple-A Servers: Handle authentication, authorization, and auditing; commonly at network edges for remote logins or on networking equipment.
+Purpose: Uses a single credential database for consistency.
+Common Protocols:
+RADIUS: Remote Authentication Dial-In User Service.
+Diameter: Advanced version of RADIUS for broader applications.
+TACACS+: Terminal Access Controller Access-Control System Plus.
+Placement: On network edges for remote access or equipment authentication.
+
+
+Summary of I Triple A
+Identification: User claims identity (e.g., username).
+Authentication: Verifies identity (e.g., password/PIN against database).
+Authorization: Grants permissions based on access model (DAC, MAC, RBAC).
+Accounting/Auditing: Logs all actions for retracing and accountability.
+Overall Value: Essential for security; protects against insider threats and external attacks by enabling detailed tracking.
