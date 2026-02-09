@@ -1,0 +1,48 @@
+Computer Viruses and Antivirus Documentation
+Computer viruses and malware pose significant threats by harming, stealing, or destroying data. Antivirus software provides protection through various detection methods. This guide explains viruses, malware types, infection processes, and how antivirus works, including advanced techniques like heuristic analysis and machine learning. Based on the transcript, it emphasizes prevention and selecting effective antivirus solutions.
+
+What is a Computer Virus?
+A virus is malicious software that infects systems to harm, harvest, erase, eavesdrop, capture, or destroy data.
+Operation: Functions like legitimate programs but with harmful intent.
+Sneakiness: Attaches to files (e.g., email attachments, MP3s, movies) and disguises as benign.
+Impact: Can spread across networks, causing widespread damage.
+
+    Types of Malware
+Malware encompasses various threats beyond viruses; antivirus targets these.
+Ransomware: Locks devices/files until ransom is paid; targets individuals, businesses, non-profits.
+Worms: Self-replicating malware that spreads without user interaction.
+Trojans: Disguised as legitimate software; grants unauthorized access.
+Spyware: Monitors and steals personal information.
+Keyloggers: Records keystrokes to capture passwords.
+Adware: Displays unwanted ads; can lead to further infections.
+Phishing: Deceptive emails/links to trick users into revealing data.
+Others: Includes rootkits, adware, and more; constantly evolving.
+
+    How Viruses Infect and Spread
+Viruses exploit legitimate files and networks to propagate.
+Attachment: Hides in attachments or downloads; activates when opened.
+Camouflage: Appears legitimate, bypassing basic checks.
+Mutations: Like biological viruses, spawns variants to evade detection.
+Encryption: Hackers encrypt signatures to avoid database matching.
+Spread: Via networks, USB drives, or infected devices.
+
+    How Antivirus Works
+Antivirus software detects and prevents malware using multiple methods.
+Definition Files/Database: Cross-checks files against known malware signatures; updated regularly.
+Limitations: Ineffective against new/encrypted/mutated threats.
+Advanced Techniques:
+Heuristic Analysis: Groups related signatures into families; detects variants by behavior/patterns.
+Rootkit Detection: Monitors program actions to identify malicious intent.
+Antivirus Sandbox: Tests files/software in isolated environments; observes behavior before allowing execution.
+Machine Learning: Predicts threats based on past actions; stops malware proactively.
+
+    Choosing the Best Antivirus
+Select antivirus based on effectiveness, ease of use, and features; no single solution is 100% foolproof.
+Key Criteria:
+Effectiveness: Handles sophisticated threats, mutations, and zero-day attacks.
+Ease of Use: User-friendly interface; minimal false positives.
+Resources: Low system impact; doesn't slow performance.
+Updates: Frequent database and feature updates.
+Multi-Pronged Approach: Combines signature, heuristic, behavioral, and ML detection.
+Pitfalls: Avoid fake "antivirus" malware; some legitimate software may cause issues like slowdowns.
+Recommendations: Compare options (e.g., via links in descriptions); choose based on needs (e.g., personal vs. business).
