@@ -1,0 +1,57 @@
+PCI DSS (Payment Card Industry Data Security Standard) Documentation
+The PCI DSS is a global standard developed to enhance cardholder data security and promote consistent security measures. It applies to all organizations that process, transmit, or store cardholder data. This guide explains what PCI DSS is, compliance requirements, penalties, and steps to achieve compliance. Based on the transcript, it covers the standard's origins, objectives, and practical implementation.
+
+What is PCI DSS?
+PCI DSS stands for Payment Card Industry Data Security Standard.
+--Purpose: Encourages and enhances cardholder data security; facilitates global adoption of consistent data security measures.
+---Applicability: Applies to all merchants and service providers that process, transmit, or store cardholder data.
+---Origins: Launched in 2004 through collaboration between major credit card brands: American Express, Discover, JCB, MasterCard, and Visa.
+----Importance: Organizations handling card payments must comply or face financial penalties or loss of card acceptance rights.
+
+Do I Need to Comply with PCI DSS?
+Compliance is mandatory for organizations dealing with credit/debit cards.
+--Who Must Comply: All entities that store, process, and/or transmit cardholder data.
+---Variations: Requirements differ based on organization size, transaction volume, and other factors.
+---Criteria: Set by individual payment brands, each with its own compliance program.
+--Scope: Includes merchants and service providers; compliance levels vary (e.g., merchant levels determine self-assessment or external audits).
+
+Penalties for Non-Compliance
+Non-compliance can lead to severe financial and operational consequences.
+--Enforcement: PCI DSS is a contractual standard, not law; enforced through agreements between merchants, acquiring banks, and payment brands.
+Penalties:
+Payment brands can fine acquiring banks for violations.
+Acquiring banks can withdraw card acceptance rights from non-compliant merchants.
+Additional Risks: PCI DSS breaches are also GDPR breaches (cardholder data is personal data), potentially incurring administrative fines up to €20 million (or ~£18 million) or 4% of annual global turnover, whichever is greater.
+Statistics: Verizon's 2018 Failing Security Report found that 47.5% of assessed organizations failed to maintain all PCI DSS security controls.
+
+How to Become PCI DSS Compliant
+Compliance involves meeting 12 requirements organized into 6 control objectives.
+Determine Merchant Level: Assess your level to identify if a Self-Assessment Questionnaire (SAQ) or Report on Compliance (ROC) is needed.
+SAQ Types: Various SAQs with different requirements; some include internal/external vulnerability scans and penetration testing.
+ROC: Conducted by a PCI Qualified Security Assessor (QSA); results in a formal report submitted to the PCI Security Standards Council.
+Gap Analysis: Useful first step; reviews current compliance, includes interviews, system assessments, and data flow analysis to outline steps for full compliance.
+
+6 Control Objectives and 12 Requirements
++++Build and Maintain a Secure Network:
+Install and maintain a firewall configuration to protect cardholder data.
+Do not use vendor-supplied defaults for system passwords and other security parameters.
+
++++Protect Cardholder Data:
+Protect stored cardholder data.
+Encrypt transmission of cardholder data across open, public networks.
+
++++Maintain a Vulnerability Management Program:
+Use and regularly update antivirus software or programs.
+Develop and maintain secure systems and applications.
+
++++Implement Strong Access Control Measures:
+Restrict access to cardholder data by business need-to-know.
+Assign a unique ID to each person with computer access.
+Restrict physical access to cardholder data.
+
+++Regularly Monitor and Test Networks:
+Track and monitor all access to network resources and cardholder data.
+Regularly test security systems and processes.
+
+++Maintain an Information Security Policy:
+Maintain a policy that addresses information security for employees and contractors.
