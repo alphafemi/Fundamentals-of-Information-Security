@@ -1,0 +1,40 @@
+Computer Memory Documentation
+Computers use memory to store and process data, unlike human memory, it's stable, precise, and handles complex tasks quickly. This guide explains how computer memory works, binary representation, types (primary and secondary), and examples of storage devices. Based on the transcript, it covers the fundamentals of data storage in electronics.
+
+How Computer Memory Works
+Computers are electronic machines that understand electricity in two states: on (1) and off (0).
+
+Binary Language: Uses bits (0 or 1); a byte is 8 bits.
+Measurement Units: Bits, bytes, kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB), etc.
+Function: Stores data and instructions; processes them rapidly.
+
+    Types of Memory
+Memory is divided into primary (fast, temporary) and secondary (permanent, larger capacity).
+
+Primary Memory
+Handles immediate data access; includes RAM and ROM.
+
+    RAM (Random Access Memory):
+Type: Read-write (volatile); data erased when power off.
+Function: Loads OS and applications; you work on copies in RAM.
+Use: Temporary storage for active tasks.
+
+    ROM (Read-Only Memory):
+Type: Permanent (non-volatile); pre-recorded, unerasable.
+Function: Stores BIOS (Basic Input Output System) to load the OS.
+Importance: Essential for booting; without it, the computer can't start.
+
+  Secondary Memory
+Also called auxiliary, external, or backup memory; stores data permanently when primary memory is insufficient.
+Characteristics: Non-volatile; retains data without power; larger capacity.
+
+  Examples of Secondary Memory
+Common devices for long-term storage.
+==Hard Disk: Internal/external; stores large data amounts; primary non-volatile memory.
+==Compact Disk (CD): Portable, cheap; once widely used for data/music.
+==Digital Versatile Disk (DVD): Stores 6x more than CD; single/double-sided for increased capacity.
+==Blu-ray Disc: Uses blue-violet laser; stores 25 GB (5x DVD capacity).
+==Flash Drive (USB/Pen Drive): Portable, small, inexpensive; connects via USB.
+==Memory Card: Tiny; used in cameras, smartphones, MP3 players, etc.
+==Obsolete Examples:
+    ++Floppy Disks: First portable storage; sizes: 8", 5.25", 3.5".
