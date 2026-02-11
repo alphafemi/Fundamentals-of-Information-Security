@@ -1,0 +1,48 @@
+Threats in Information Security Documentation
+Threats are potential events that can damage systems, data, or services. This guide explains threats, their types (based on the Parkerian Hexad or similar models), and implications. Based on the transcript, it covers interception, interruption, modification, and fabrication, emphasizing the need for security measures like cryptography.
+
+What is a Threat?
+A threat is any event or action with the potential to harm a system, including unauthorized access, data loss, or service disruption.
+
+Impact: Can compromise confidentiality, integrity, availability, or other security attributes.
+Examples: Cyberattacks, natural disasters, or human error.
+Relation to Security: Threats exploit vulnerabilities; security aims to mitigate them.
+
+Types of Threats
+Threats are categorized based on how they affect systems and data. These align with models like the Parkerian Hexad (Confidentiality, Integrity, Availability, etc.).
+
+1. Interception
+Unauthorized access to data or services during transmission or storage.
+
+Description: An attacker gains access to systems or data without permission, similar to eavesdropping.
+Example: Man-in-the-middle attacks where data is intercepted in transit.
+Impact: Breaches confidentiality; sensitive information (e.g., passwords, financial data) is exposed.
+Prevention: Encryption, secure channels (e.g., HTTPS).
+
+2. Interruption
+Disruption of system availability or services.
+
+Description: Unauthorized access causes damage, making systems or data unavailable.
+Example: Denial-of-Service (DoS) attacks that overload servers, preventing legitimate users from accessing services.
+Impact: Affects availability; users can't access information or services.
+Prevention: Redundancy, firewalls, monitoring for anomalies.
+
+3. Modification
+Unauthorized alteration of data or content.
+
+Description: An attacker changes data in storage or during transmission.
+Example: Tampering with emails or files, altering transaction details.
+Impact: Compromises integrity; data becomes inaccurate or unreliable.
+Prevention: Digital signatures, hashing, access controls.
+
+4. Fabrication
+Addition of false data or content by an attacker.
+
+Description: Attacker inserts fake information into messages or systems, making it appear as legitimate content.
+Example: Injecting malicious code or forging emails/documents.
+Impact: Introduces false data, leading to misinformation or further attacks.
+Prevention: Authentication, validation checks, secure protocols.
+Implications and Mitigation
+Overall Risk: Threats can lead to data breaches, financial loss, or operational downtime.
+Defense Strategies: Implement multi-layered security (e.g., firewalls, encryption, intrusion detection). Regular audits and user education help.
+Next Steps: Learn about cryptography (encryption algorithms, symmetric/asymmetric methods) for protecting against these threats.
