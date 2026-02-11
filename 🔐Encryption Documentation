@@ -1,0 +1,36 @@
+Encryption Documentation
+Encryption scrambles data so only authorized parties can access it. This guide explains symmetric and asymmetric encryption, their differences, and real-world applications. Based on the transcript, it uses the Alice and Bob analogy to illustrate concepts, emphasizing secure key management.
+
+What is Encryption?
+Encryption transforms readable data (plaintext) into unreadable form (ciphertext) using algorithms and keys.
+Purpose: Protects sensitive information from unauthorized access.
+Types: Symmetric (shared key) and asymmetric (public/private keys).
+
+Symmetric Encryption
+Uses a single shared key for encryption and decryption.
+Process: Alice encrypts a document with a passphrase; sends it to Bob.
+Problem: Sharing the key securely (e.g., via email) risks interception, allowing attackers to decrypt messages.
+Analogy: Like a shared lock; anyone with the key can open it.
+Limitations: Key distribution is insecure for remote parties.
+
+Asymmetric Encryption
+Uses a key pair: public key (shared) and private key (secret).
+Key Generation: Algorithms like RSA create mathematically linked public/private keys.
+Properties:
+Public key encrypts data; private key decrypts it.
+Keys are linked but cannot be derived from each other.
+Analogy: Mailbox—address (public key) is known to all; only owner has the key (private key) to open it.
+
+How Asymmetric Encryption Works
+Alice and Bob securely exchange messages without sharing a secret key.
+Step 1: Exchange public keys (e.g., Bob gives his to Alice; Alice gives hers to Bob).
+Step 2: Alice encrypts the document with Bob's public key and sends it.
+Step 3: Bob decrypts using his private key.
+Security: Only Bob can read it; Alice can't decrypt her own message without Bob's private key.
+Key Protection: Private keys must be safeguarded; theft allows decryption of messages intended for the owner.
+
+Uses of Asymmetric Encryption
+Widely used for secure communications and transactions.
+HTTPS: Secures websites; browsers use asymmetric encryption for initial handshake.
+PGP (Pretty Good Privacy): Encrypts emails securely.
+Bitcoin: Protects wallets; only the owner (with private key) can transfer funds.
