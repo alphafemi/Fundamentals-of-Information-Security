@@ -1,0 +1,56 @@
+Parkerian Hexad in Information Security Documentation
+The Parkerian Hexad is a model in information security proposed by Don Parker in 1998. It expands on traditional security models by adding two attributes beyond the common CIA triad (Confidentiality, Integrity, Availability). This guide explains the six attributes of the Parkerian Hexad, their meanings, and examples. It emphasizes a holistic view of data security, including aspects like ownership and usability.
+
+Overview of the Parkerian Hexad
+Creator: Don Parker (1998).
+Purpose: Provides a comprehensive framework for information security, addressing six key attributes to protect data from various threats.
+Attributes: Confidentiality, Integrity, Availability, Authenticity, Possession (or Control), and Utility.
+Significance: Builds on the CIA triad by including possession and utility, which cover scenarios like data theft or loss of value.
+
+The Six Attributes
+Each attribute focuses on a different aspect of data protection and security.
+
+1. Confidentiality
+Protects data from unauthorized viewing or access.
+
+Definition: Ensures sensitive information is only accessible to authorized parties.
+Example: Financial records must remain confidential to prevent unauthorized individuals from viewing personal or business finances.
+Importance: Prevents breaches like eavesdropping or data leaks.
+
+2. Integrity
+Prevents unauthorized modification of data.
+
+Definition: Ensures data remains complete, accurate, and unaltered.
+Example: When sending a message, no third party should modify it; the recipient receives the message in its original, intended form.
+Importance: Protects against tampering, corruption, or unauthorized changes.
+
+3. Availability
+Ensures data is accessible when needed.
+Definition: Guarantees reliable access to information without unnecessary delays or outages.
+Example: Maintain backup copies of important files so they can be recovered if originals are unavailable (e.g., due to hardware failure).
+Importance: Addresses downtime, ensuring critical data is always usable.
+
+4. Authenticity
+Verifies the origin and validity of data.
+
+Definition: Confirms the data's source and that it hasn't been altered after creation.
+Example: A recipient should verify a message was sent by the stated sender and remains unmodified; digital signatures are often used for this.
+Importance: Prevents impersonation or forged communications.
+
+5. Possession (or Control)
+Maintains control over data and its storage medium.
+
+Definition: Ensures authorized parties retain physical or logical control over data.
+Example: If a storage device (e.g., USB drive) is stolen, it's a loss of possession, but if data is encrypted, confidentiality isn't breached.
+Importance: Covers scenarios like theft or loss, focusing on ownership rather than just access.
+
+6. Utility
+Ensures data remains useful and valuable.
+
+Definition: Maintains the data's usability and value to authorized users.
+Example: In a stolen device with mixed encrypted/unencrypted data, encrypted data has low utility to thieves (unreadable), while unencrypted data is highly useful.
+Importance: Protects against scenarios where data is accessible but rendered unusable (e.g., via encryption or corruption).
+
+
+        Applications and Importance
+The Parkerian Hexad provides a broader security framework than the CIA triad, addressing modern threats like data theft, encryption, and usability. It's used in cybersecurity planning, risk assessments, and policy development to ensure comprehensive protection.
