@@ -1,0 +1,84 @@
+DNS (Domain Name System) Documentation
+DNS (Domain Name System) translates human-readable domain names into IP addresses, enabling easy internet communication without memorizing complex numbers. This guide explains DNS fundamentals, its purpose, and examples. Based on the transcript, it highlights DNS as a directory for internet devices, simplifying access to websites and services.
+
+Overview
+DNS acts like a phonebook for the internet, converting domain names (e.g., tryhackme.com) into IP addresses (e.g., 104.26.10.229) for device communication.
+
+Purpose: Eliminates need to remember numerical IP addresses; enables user-friendly browsing.
+Analogy: Like house addresses for mail—each device has a unique IP for direct communication.
+Function: Resolves domain names to IPs; essential for web access, email, and services.
+
+How DNS Works
+When accessing a website, DNS translates the name to an IP for routing.
+IP Address Structure: 4 sets of digits (0-255) separated by periods (e.g., 104.26.10.229 for IPv4).
+Process: User types domain (e.g., tryhackme.com); DNS server looks up/resolves to IP; browser connects.
+Benefits: Simplifies navigation; supports global internet scalability.
+
+TLD (Top-Level Domain)
+The TLD is the rightmost part of a domain name, indicating purpose or location.
+Definition: Last segment after the dot (e.g., .com in tryhackme.com).
+    Types:
+gTLD (Generic Top-Level Domain): Indicates purpose (e.g., .com for commercial, .org for organizations, .edu for education, .gov for government); expanded to include new ones like .online, .club, .website, .biz due to demand.
+ccTLD (Country Code Top-Level Domain): Indicates geography (e.g., .ca for Canada, .co.uk for UK).
+List: Over 2,000 TLDs available; see full list here (https://data.iana.org/TLD/tlds-alpha-by-domain.txt).
+Note: gTLDs were originally purpose-specific but now include many generic options.
+
+Second-Level Domain
+The Second-Level Domain is the main identifier before the TLD.
+Definition: Core name before the TLD (e.g., tryhackme in tryhackme.com).
+Restrictions: Limited to 63 characters + TLD; uses only a-z, 0-9, and hyphens; cannot start/end with hyphens or have consecutive hyphens.
+Purpose: Unique identifier for the domain owner; registered with registrars.
+
+Subdomain
+Subdomains extend the domain for organization or functionality.
+Definition: Prefixes before the Second-Level Domain, separated by periods (e.g., admin in (admin.tryhackme.com).
+Restrictions: Same as Second-Level Domain (63 characters max per subdomain; a-z, 0-9, hyphens only; no starting/ending/consecutive hyphens); total domain length ≤253 characters.
+Usage: Create hierarchies (e.g., jupiter.servers.tryhackme.com); unlimited subdomains possible.
+Examples: admin.tryhackme.com (subdomain for admin access); mail.tryhackme.com (for email).
+
+
+            DNS records
+DNS records are entries in DNS zones that define how traffic is routed and services are configured for a domain.
+Purpose: Map domains to IPs, specify servers, verify ownership.
+Types: Multiple record types serve different functions; common ones include A, AAAA, CNAME, MX, TXT.
+Management: Updated via DNS providers (e.g., registrars, cloud DNS).
+
+A Record
+A records map domain names to IPv4 addresses for web traffic.
+
+Definition: Resolves a domain to a 32-bit IPv4 address.
+Example: tryhackme.com → 104.26.10.229.
+Use: Directs users to web servers; essential for website hosting.
+Format: Domain name → IPv4 address (e.g., 104.26.10.229).
+
+AAAA Record
+AAAA records map domain names to IPv6 addresses for modern networking.
+Definition: Resolves a domain to a 128-bit IPv6 address.
+Example: tryhackme.com → 2606:4700:20::681a:be5.
+Use: Supports IPv6-enabled devices; future-proofs connectivity.
+Format: Domain name → IPv6 address (e.g., 2606:4700:20::681a:be5).
+
+CNAME Record
+CNAME records create aliases, pointing one domain to another.
+Definition: Resolves a domain to another domain name (canonical name).
+Example: store.tryhackme.com → shops.shopify.com (then resolves to IP).
+Use: Subdomains for external services (e.g., shops, CDNs); simplifies management.
+Process: Client resolves CNAME → additional DNS lookup for target → resolves to IP.
+Note: Cannot coexist with other records (e.g., A records) for the same name.
+
+MX Record
+MX records specify email servers for domain email handling.
+Definition: Resolves to addresses of servers handling email for the domain.
+Example: tryhackme.com → alt1.aspmx.l.google.com.
+Use: Email routing; ensures messages reach correct mail servers.
+Priority: Includes priority flag; lower numbers indicate preferred servers; used for failover (e.g., main server down → try backup).
+Format: Domain → mail server hostname + priority (e.g., 10 mail.tryhackme.com).
+
+TXT Record
+TXT records store arbitrary text data for verification and configuration.
+Definition: Free-form text fields for any text-based data.
+Uses:
+SPF (Sender Policy Framework): Lists authorized email servers to prevent spam/spoofing (e.g., v=spf1 include:_spf.google.com ~all).
+Domain Verification: Confirms domain ownership for third-party services (e.g., Google Workspace).
+Other: Miscellaneous records for DMARC, BIMI, etc.
+Format: Domain → "text data" (e.g., "v=spf1 include:_spf.google.com ~all").
