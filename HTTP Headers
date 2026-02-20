@@ -1,0 +1,93 @@
+HTTP headers are key-value pairs included in HTTP requests and responses to communicate metadata about the data being transmitted.
+
+Purpose: Provide context for the request/response, including browser details, content types, caching rules, and authentication.
+Categories: Request headers (sent from client to server) and Response headers (sent from server to client).
+Importance: Many headers are required for proper website functionality; missing or incorrect headers can cause display issues or errors.
+Examples: Host, User-Agent, Content-Type, Cache-Control.
+Common Request Headers
+Request headers are sent from the client (typically a web browser) to the server, providing information about the client and the requested resource.
+
+Header
+Example
+
+Host
+Specifies the domain name of the server. Required when multiple websites are hosted on a single server to route requests to the correct website.
+Host: tryhackme.com
+
+User-Agent
+Identifies the client software (browser) and version number. Helps the server format content appropriately for the browser.
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+
+Content-Length
+Indicates the size of the data being sent in the request body (e.g., form submissions). Ensures the server receives complete data.
+Content-Length: 124
+
+Accept-Encoding
+Lists compression methods supported by the client (e.g., gzip, deflate). Allows the server to compress data for faster transmission.
+Accept-Encoding: gzip, deflate
+
+Cookie
+Sends stored cookies back to the server to maintain session state, remember login information, or recall user preferences.
+Cookie: session_id=abc123; user_pref=dark_mode
+
+Detailed Descriptions
+
+      Host
+Required for name-based virtual hosting.
+Example: A server hosting example.com and test.com uses the Host header to determine which site to serve.
+
+      User-Agent
+Includes browser name, version, operating system, and rendering engine.
+Servers may deliver different content based on User-Agent (e.g., mobile versions).
+
+      Content-Length
+Required for POST and PUT requests with a request body.
+Prevents data truncation during transmission.
+
+      Accept-Encoding
+Common values: gzip, deflate, br (Brotli).
+Reduces bandwidth usage by compressing responses.
+
+    Cookie
+Key for session management, authentication, and personalization.
+Server sets cookies via Set-Cookie response header; client echoes them in subsequent requests.
+Common Response Headers
+Response headers are sent from the server to the client, providing metadata about the returned data.
+
+Header
+Example
+
+Set-Cookie
+Instructs the client to store a cookie for future requests.
+Set-Cookie: session_id=xyz789; expires=Thu, 01 Jan 2025 00:00:00 GMT
+
+Cache-Control
+Specifies caching policies for the response (e.g., how long to store in cache).
+Cache-Control: max-age=3600, public
+
+Content-Type
+Indicates the media type of the response (e.g., HTML, CSS, JSON). Helps the client process the data correctly.
+Content-Type: text/html; charset=UTF-8
+
+Content-Encoding
+Specifies the compression method used on the response data.
+Content-Encoding: gzip
+Detailed Descriptions
+
+Set-Cookie
+Includes cookie name, value, expiration, path, and domain.
+Example: Set-Cookie: user_id=123; Path=/; Secure; HttpOnly
+Cookies may include flags like Secure (HTTPS only) or HttpOnly (no JavaScript access).
+
+Cache-Control
+Directives include max-age (seconds), public, private, no-cache, no-store.
+Controls how long browsers or proxies should cache the response.
+
+Content-Type
+Also known as MIME type.
+Common values: text/html, text/css, application/json, image/png, video/mp4.
+Essential for correct rendering; browsers rely on this to interpret data.
+
+Content-Encoding
+Complements Accept-Encoding request header.
+Common methods: gzip, deflate, br.
