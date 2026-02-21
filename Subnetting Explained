@@ -1,0 +1,62 @@
+Subnetting Explained
+Subnetting is the process of dividing a larger network into smaller, manageable networks. Think of it like slicing a cake—there's only so much to go around, and you decide how to divide it among different groups.
+
+Why Subnetting Matters
+In real-world scenarios, organizations need to separate different groups or departments. For example, a business might have:
+
+Accounting department
+Finance department
+Human Resources department
+Subnetting allows network administrators to assign specific portions of the network to each department, making it easier to direct traffic to the right place.
+
+How Subnetting Works
+Subnetting is achieved using a subnet mask—a number that determines how the IP address is divided between the network and host portions.
+
+IP Addresses and Subnet Masks
+An IP address consists of four sections called octets (e.g., 192.168.1.100)
+A subnet mask also has four octets (e.g., 255.255.255.0)
+Each octet ranges from 0 to 255 (representing 8 bits)32bits
+
+Three Types of IP Addresses in a Subnet
+
+Type----Network Address
+Purpose----Identifies the start of the actual network
+Example----192.168.1.0
+
+Type----Host Address
+Purpose----Identifies a specific device on the subnet
+Example-----192.168.1.100
+
+Type----Default Gateway
+Purpose----The device that sends data to other networks
+Example----192.168.1.254
+
+Network Address
+The network address identifies the beginning of a network. All devices within the same subnet share this prefix.
+
+Example: A device with IP 192.168.1.100 belongs to the network 192.168.1.0
+Host Address
+A host address is assigned to individual devices (computers, printers, phones) on the network.
+
+Example: 192.168.1.100 could be assigned to an employee's computer
+Default Gateway
+The default gateway is a special address that connects the local network to other networks (like the internet). Any data destined for a device outside the local network is sent here.
+
+Convention: Usually the first (.1) or last (.254) host address in a network
+
+When Do We Need Subnetting?
+At Home
+Most home networks use a single subnet because having more than 254 devices connected at once is unlikely. A typical home subnet looks like:
+Network: 192.168.1.0
+Usable hosts: 192.168.1.1 – 192.168.1.254 (254 devices)
+
+In Business
+Offices and businesses have many more devices:
+Desktop computers
+Laptops
+Printers
+Security cameras
+Sensors
+Smart devices
+In these environments, subnetting becomes essential to manage large numbers of devices efficiently.
+
