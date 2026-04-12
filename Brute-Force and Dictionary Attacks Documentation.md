@@ -11,7 +11,7 @@ Password attacks aim to guess or crack credentials for user accounts, targeting 
 Systematic guessing of all possible combinations until the correct password is found.
 **Process: Repeated attempts using programs; tries every possible combination.
 **Tools: John the Ripper, Cain and Abel, Metasploit, Kali Linux exploit kits.
--- Execution:
+- Execution:
 **Online/Interactive: Directly against live systems (e.g., login prompts).
 **Offline: Against captured hashes (e.g., from databases); faster since no network delays.
 **Targets: High-privilege accounts; if unsuccessful, any account for privilege escalation.
