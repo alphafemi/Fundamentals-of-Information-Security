@@ -1,13 +1,13 @@
-Brute-Force and Dictionary Attacks Documentation
+## Brute-Force and Dictionary Attacks Documentation
 Brute-force and dictionary attacks are common methods to crack passwords and gain unauthorized access to systems. This guide explains how these attacks work, tools involved, and why strong passwords are crucial. Based on the transcript, it covers online/offline attempts, word lists, and advanced techniques.
 
-  Overview of Password Attacks
+ ## Overview of Password Attacks
 Password attacks aim to guess or crack credentials for user accounts, targeting high-privilege accounts like admin or root.
 Methods: Brute-force (repeated attempts) or dictionary (using word lists); can be interactive (online) or offline (against stored hashes).
 Goal: Gain access, then escalate privileges if needed.
 Sources: Hashes from domain controllers, databases, or via SQL injection on web servers.
 
-    Brute-Force Attacks
+   ## Brute-Force Attacks
 Systematic guessing of all possible combinations until the correct password is found.
 Process: Repeated attempts using programs; tries every possible combination.
 Tools: John the Ripper, Cain and Abel, Metasploit, Kali Linux exploit kits.
@@ -17,7 +17,7 @@ Offline: Against captured hashes (e.g., from databases); faster since no network
 Targets: High-privilege accounts; if unsuccessful, any account for privilege escalation.
 Limitations: Time-consuming for long/complex passwords; detectable on live systems.
 
-      Dictionary Attacks
+    ##  Dictionary Attacks
 Uses pre-compiled lists of common passwords and words to guess credentials.
   Word Lists/Dictionaries:
 Common passwords, English words, cracked password lists from past breaches.
@@ -29,7 +29,7 @@ Available online from hacked sites or databases.
 -Effectiveness: Exploits weak passwords; even "strong" ones may fall if using common patterns.
 Combination with Brute-Force: Often used together; dictionary first for speed, brute-force for leftovers.
 
-      Prevention and Best Practices
+   ##  Prevention and Best Practices
 To defend against these attacks:
 Strong Passwords: Use long, complex passwords with uppercase, lowercase, numbers, symbols; avoid dictionary words or patterns.
 Multi-Factor Authentication (MFA): Adds layers beyond passwords.
